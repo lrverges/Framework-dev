@@ -1,0 +1,11 @@
+services:
+  gatekeeper-sandbox:
+    build:
+      context: ..
+      dockerfile: sandbox/Dockerfile
+    container_name: gatekeeper-sandbox
+    volumes:
+      - ..:/workspace:rw
+    working_dir: /workspace
+    command: python3 scripts/gatekeeper/gatekeeper.py
+    network_mode: bridge

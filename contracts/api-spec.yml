@@ -1,0 +1,71 @@
+openapi: 3.1.0
+info:
+  title: Universal Core API Specification
+  description: >
+    Centralized canonical contract for API endpoints, schemas, and request/response specifications.
+    This file serves as the Single Source of Truth for interface contracts (Spec-Driven Development).
+  version: 1.0.0
+  contact:
+    name: Architecture & Engineering Team
+    email: architect@anti-vibecoding.local
+
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Local Sandbox / Development Server
+
+paths:
+  /health:
+    get:
+      summary: Health check probe
+      description: Returns service health status and timestamp.
+      operationId: getHealthStatus
+      responses:
+        '200':
+          description: Service is healthy and operational.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+        '503':
+          description: Service degraded or unhealthy.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - timestamp
+      properties:
+        status:
+          type: string
+          enum: [healthy, degraded, unhealthy]
+          example: healthy
+        timestamp:
+          type: string
+          format: date-time
+          example: '2026-09-23T14:40:00Z'
+        version:
+          type: string
+          example: 1.0.0
+
+    ErrorResponse:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+          example: INTERNAL_ERROR
+        message:
+          type: string
+          example: An unexpected error occurred.
+        details:
+          type: array
+          items:
+            type: string

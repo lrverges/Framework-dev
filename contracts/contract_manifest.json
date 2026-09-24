@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "description": "Registro criptográfico de inmutabilidad de contratos. Generado y sellado por el Arquitecto.",
+  "sealed_at": "2026-09-23T18:48:15.965816+00:00",
+  "files": {
+    "api-spec.yml": "fc8ce8d99817f5c84505256a40ca6bcc7f9054fa1ad8a508885029f632f1e95d",
+    "data-model.md": "c3f44b99dc2aa81fa874b23f4337cbcd552425c4e7d3c4a9be4f84918f17b4ff",
+    "README.md": "31721438c53c449ce0f992fb7f8fc802c4b1348dc7f159091c46c5f8a8e3ffa0"
+  }
+}
