@@ -2,6 +2,8 @@
 
 Marco de trabajo universal de ingeniería de software de alta fidelidad asistido por IA. Diseñado para erradicar el *"vibecoding"* (desarrollo por intuición sin pruebas ni especificaciones) mediante **desarrollo guiado por especificaciones (SDD)**, **pruebas inmutables (Agentic TDD)**, **pruebas E2E de navegador**, **diseño de módulos profundos** y **aduanas de calidad deterministas**.
 
+> 💡 **¿Comenzando un proyecto nuevo desde cero?** Consulta la [Guía de Inicio Rápido Paso a Paso (GETTING_STARTED.md)](file:///c:/Finance/GETTING_STARTED.md) para ver los prompts exactos y el diálogo interactivo con el agente.
+
 ---
 
 ## 🏛️ Los Pilares Metodológicos

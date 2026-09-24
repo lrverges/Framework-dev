@@ -2,6 +2,8 @@
 
 Este documento detalla el ciclo de vida de desarrollo de extremo a extremo que rige este repositorio, combinando **Spec-Driven Development (SDD)**, **Agentic TDD con Inmutabilidad Criptográfica**, **Aislamiento Físico por Worktrees (Superpowers)** y **Verificación Adversaria (LIDR-Academy)**.
 
+> 📖 **Para una guía conversacional paso a paso con los prompts de chat para cada fase**, consulta [GETTING_STARTED.md](file:///c:/Finance/GETTING_STARTED.md).
+
 ---
 
 ## 🔄 El Ciclo de 8 Pasos
